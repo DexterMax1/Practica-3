@@ -1,0 +1,307 @@
+/* =====================================
+   RESPONSIVE.CSS
+   NovaTech Market
+
+   Este archivo adapta el diseño
+   a diferentes tamaños de pantalla.
+===================================== */
+
+
+/* =====================================
+   TABLETS
+   Pantallas de hasta 992px
+===================================== */
+
+@media screen and (max-width: 992px) {
+
+    main {
+
+        /* Aumenta el ancho disponible */
+        width: 95%;
+
+    }
+
+    nav ul {
+
+        /* Reduce el espacio entre enlaces */
+        gap: 10px;
+
+    }
+
+    article {
+
+        /* Reduce el espacio interno */
+        padding: 12px;
+
+    }
+
+    table {
+
+        /* Disminuye tamaño del texto */
+        font-size: 14px;
+
+    }
+
+}
+
+
+/* =====================================
+   TABLETS PEQUEÑAS
+   Pantallas de hasta 768px
+===================================== */
+
+@media screen and (max-width: 768px) {
+
+    header {
+
+        /* Reduce el espacio interno */
+        padding: 15px;
+
+    }
+
+    header h1 {
+
+        /* Reduce el tamaño del título */
+        font-size: 1.8rem;
+
+    }
+
+    nav ul {
+
+        /* Coloca el menú en columna */
+        flex-direction: column;
+
+        /* Centra los elementos */
+        align-items: center;
+
+        /* Reduce separación */
+        gap: 8px;
+
+    }
+
+    nav a {
+
+        /* Cada enlace ocupa todo el ancho */
+        width: 100%;
+
+        /* Centra el texto */
+        text-align: center;
+
+    }
+
+    section {
+
+        /* Reduce padding de las secciones */
+        padding: 15px;
+
+    }
+
+    article {
+
+        /* El artículo ocupa todo el ancho */
+        width: 100%;
+
+    }
+
+    img {
+
+        /* Imagen adaptable */
+        width: 100%;
+
+        /* Mantiene proporción */
+        height: auto;
+
+    }
+
+    video {
+
+        /* Video ocupa todo el ancho */
+        width: 100%;
+
+    }
+
+    audio {
+
+        /* Audio ocupa todo el ancho */
+        width: 100%;
+
+    }
+
+    table {
+
+        /* Convierte la tabla en bloque */
+        display: block;
+
+        /* Permite desplazamiento horizontal */
+        overflow-x: auto;
+
+    }
+
+}
+
+
+/* =====================================
+   TELÉFONOS
+   Pantallas de hasta 576px
+===================================== */
+
+@media screen and (max-width: 576px) {
+
+    body {
+
+        /* Reduce tamaño general del texto */
+        font-size: 14px;
+
+    }
+
+    header h1 {
+
+        /* Reduce el tamaño del título principal */
+        font-size: 1.5rem;
+
+    }
+
+    section h2 {
+
+        /* Reduce tamaño de subtítulos */
+        font-size: 1.2rem;
+
+    }
+
+    article h3 {
+
+        /* Reduce tamaño de títulos de productos */
+        font-size: 1rem;
+
+    }
+
+    button,
+    input[type="submit"],
+    input[type="reset"] {
+
+        /* Botones ocupan todo el ancho */
+        width: 100%;
+
+    }
+
+    input,
+    select,
+    textarea {
+
+        /* Campos ocupan todo el ancho */
+        width: 100%;
+
+    }
+
+    footer {
+
+        /* Reduce espacio interno */
+        padding: 15px;
+
+        /* Reduce tamaño de texto */
+        font-size: 14px;
+
+    }
+
+}
+
+
+/* =====================================
+   TELÉFONOS PEQUEÑOS
+   Pantallas de hasta 400px
+===================================== */
+
+@media screen and (max-width: 400px) {
+
+    header {
+
+        /* Menos espacio en el encabezado */
+        padding: 10px;
+
+    }
+
+    header h1 {
+
+        /* Título más pequeño */
+        font-size: 1.2rem;
+
+    }
+
+    nav a {
+
+        /* Reduce tamaño del texto */
+        font-size: 14px;
+
+        /* Reduce espacio interno */
+        padding: 8px;
+
+    }
+
+    section {
+
+        /* Menos espacio interno */
+        padding: 10px;
+
+    }
+
+    article {
+
+        /* Menos espacio en tarjetas */
+        padding: 10px;
+
+    }
+
+    table {
+
+        /* Texto más pequeño */
+        font-size: 12px;
+
+    }
+
+}
+
+
+/* =====================================
+   ORIENTACIÓN HORIZONTAL
+   Landscape
+
+   Se aplica cuando el dispositivo
+   está acostado horizontalmente.
+===================================== */
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+
+    header {
+
+        /* Evita que el header permanezca fijo */
+        position: relative;
+
+    }
+
+    nav ul {
+
+        /* Menú vuelve a mostrarse en fila */
+        flex-direction: row;
+
+        /* Permite varias líneas si es necesario */
+        flex-wrap: wrap;
+
+    }
+
+    @media (max-width: 992px) {
+
+    /* =====================================
+   GRID DE PRODUCTOS (Para computadoras)
+===================================== */
+.contenedor-productos {
+    display: grid;
+    /* Crea exactamente 3 columnas del mismo tamaño (1fr) */
+    grid-template-columns: repeat(3, 1fr);
+    /* Espacio de separación horizontal y vertical entre los cuadros */
+    gap: 25px;
+    margin-top: 20px;
+}
+
+}
+
+}

@@ -1,0 +1,384 @@
+/* =====================================
+   ANIMACIONES.CSS
+   NovaTech Market
+
+   Este archivo contiene animaciones
+   y efectos visuales para mejorar
+   la experiencia del usuario.
+===================================== */
+
+
+/* =====================================
+   ANIMACIÓN DE APARICIÓN
+===================================== */
+
+/*
+   Define una animación llamada "aparecer"
+   que hace que un elemento aparezca
+   gradualmente desde abajo.
+*/
+@keyframes aparecer {
+
+    from {
+
+        /* Elemento invisible al inicio */
+        opacity: 0;
+
+        /* Comienza 30px más abajo */
+        transform: translateY(30px);
+
+    }
+
+    to {
+
+        /* Elemento completamente visible */
+        opacity: 1;
+
+        /* Regresa a su posición original */
+        transform: translateY(0);
+
+    }
+
+}
+
+/*
+   Aplica la animación a todas las secciones.
+   Duración: 1 segundo.
+*/
+section {
+
+    animation: aparecer 1s ease-in-out;
+
+}
+
+
+/* =====================================
+   ANIMACIÓN DEL HEADER
+===================================== */
+
+/*
+   Crea una animación para que el
+   encabezado se deslice desde arriba.
+*/
+@keyframes deslizarHeader {
+
+    from {
+
+        /* Comienza fuera de la pantalla */
+        transform: translateY(-100%);
+
+    }
+
+    to {
+
+        /* Llega a su posición normal */
+        transform: translateY(0);
+
+    }
+
+}
+
+/*
+   Aplica la animación al header.
+*/
+header {
+
+    animation: deslizarHeader 1s ease;
+
+}
+
+
+/* =====================================
+   EFECTO EN BOTONES
+===================================== */
+
+/*
+   Agrega una transición suave
+   a todos los cambios del botón.
+*/
+button,
+input[type="submit"],
+input[type="reset"] {
+
+    transition: all 0.3s ease;
+
+}
+
+/*
+   Cuando el usuario pasa el mouse,
+   el botón aumenta ligeramente su tamaño.
+*/
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+/* =====================================
+   EFECTO EN ENLACES DEL MENÚ
+===================================== */
+
+/*
+   Suaviza las animaciones de los enlaces.
+*/
+nav a {
+
+    transition: all 0.3s ease;
+
+}
+
+/*
+   Mueve ligeramente el enlace hacia arriba
+   cuando el usuario pasa el mouse.
+*/
+nav a:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =====================================
+   TARJETAS DE PRODUCTOS
+===================================== */
+
+/*
+   Agrega transición suave a las tarjetas.
+*/
+article {
+
+    transition: all 0.4s ease;
+
+}
+
+/*
+   La tarjeta se eleva y aumenta la sombra
+   al pasar el mouse.
+*/
+article:hover {
+
+    /* Mueve la tarjeta hacia arriba */
+    transform: translateY(-10px);
+
+    /* Genera una sombra más pronunciada */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+
+}
+
+
+/* =====================================
+   EFECTO EN IMÁGENES
+===================================== */
+
+/*
+   Hace suaves los cambios en las imágenes.
+*/
+img {
+
+    transition: all 0.4s ease;
+
+}
+
+/*
+   Amplía ligeramente la imagen al pasar el mouse.
+*/
+img:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+/* =====================================
+   TABLAS
+===================================== */
+
+/*
+   Suaviza los cambios de color
+   de las filas de la tabla.
+*/
+tr {
+
+    transition: background-color 0.3s ease;
+
+}
+
+
+/* =====================================
+   FORMULARIOS
+===================================== */
+
+/*
+   Agrega animación suave a los controles.
+*/
+input,
+textarea,
+select {
+
+    transition: all 0.3s ease;
+
+}
+
+/*
+   Cuando un campo recibe foco,
+   aumenta ligeramente de tamaño.
+*/
+input:focus,
+textarea:focus,
+select:focus {
+
+    transform: scale(1.02);
+
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+/*
+   El pie de página aparece suavemente
+   al cargar la página.
+*/
+footer {
+
+    animation: aparecer 1.5s ease;
+
+}
+
+
+/* =====================================
+   TÍTULOS
+===================================== */
+
+/*
+   Los títulos aparecen gradualmente.
+*/
+h1,
+h2,
+h3 {
+
+    animation: aparecer 1.2s ease;
+
+}
+
+
+/* =====================================
+   EFECTO PULSO PARA OFERTAS
+===================================== */
+
+/*
+   Animación que agranda y reduce
+   un elemento repetidamente.
+*/
+@keyframes pulso {
+
+    0% {
+
+        /* Tamaño normal */
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        /* Aumenta ligeramente */
+        transform: scale(1.08);
+
+    }
+
+    100% {
+
+        /* Regresa al tamaño normal */
+        transform: scale(1);
+
+    }
+
+}
+
+/*
+   Aplica el efecto pulso a las etiquetas
+   resaltadas con <mark>.
+*/
+mark {
+
+    animation: pulso 2s infinite;
+
+    /* infinite = se repite para siempre */
+
+}
+
+
+/* =====================================
+   PROGRESS Y METER
+===================================== */
+
+/*
+   Hace aparecer las barras de progreso
+   y medidores de forma gradual.
+*/
+progress,
+meter {
+
+    animation: aparecer 2s ease;
+
+}
+
+
+/* =====================================
+   EFECTO DE ROTACIÓN SUAVE
+===================================== */
+
+/*
+   Animación que rota un elemento
+   360 grados continuamente.
+*/
+@keyframes girar {
+
+    from {
+
+        /* Comienza en 0 grados */
+        transform: rotate(0deg);
+
+    }
+
+    to {
+
+        /* Finaliza en 360 grados */
+        transform: rotate(360deg);
+
+    }
+
+}
+
+/*
+   PARA USAR ESTA ANIMACIÓN:
+
+   class="icono-giro"
+
+   Ejemplo:
+   <img src="logo.png" class="icono-giro">
+*/
+
+/*
+   Clase reutilizable para elementos
+   que deben girar continuamente.
+*/
+.icono-giro {
+
+    /* Permite aplicar transformaciones */
+    display: inline-block;
+
+    /* Rotación continua */
+    animation: girar 3s linear infinite;
+
+    /*
+       3s = duración
+       linear = velocidad constante
+       infinite = repetición infinita
+    */
+
+}

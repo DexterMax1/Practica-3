@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- Define la codificación de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Permite que la página sea adaptable a móviles y tablets -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- Título mostrado en la pestaña del navegador -->
+    <title>Contacto | NovaTech Market</title>
+
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Estilos para diseño responsive -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Estilos para animaciones -->
+    <link rel="stylesheet" href="css/animaciones.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         ENCABEZADO DEL SITIO
+         ========================= -->
+    <header>
+
+        <!-- Nombre principal de la empresa -->
+        <h1>NovaTech Market</h1>
+
+        <!-- Descripción de la página -->
+        <p>Contáctanos</p>
+
+        <!-- Menú de navegación -->
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Inicio</a></li>
+
+                <li><a href="productos.html">Productos</a></li>
+
+                <li><a href="carritos.html">Carrito</a></li>
+
+                <li><a href="contacto.html">Contacto</a></li>
+
+                <li><a href="acerca.html">Acerca de</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <!-- =========================
+             FORMULARIO DE CONTACTO
+             ========================= -->
+        <section>
+
+            <h2>Formulario de Contacto</h2>
+
+            <p>
+                Complete el siguiente formulario para
+                comunicarse con nuestro equipo.
+            </p>
+
+            <!-- Formulario principal -->
+            <form>
+
+                <!-- =========================
+                     INPUT TYPE="TEXT"
+                     Permite escribir texto normal
+                     ========================= -->
+                <label for="nombre">
+                    Nombre Completo:
+                </label>
+
+                <br>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    required>
+
+                <br><br>
+
+                <!-- =========================
+                     INPUT TYPE="EMAIL"
+                     Valida formato de correo
+                     ========================= -->
+                <label for="correo">
+                    Correo Electrónico:
+                </label>
+
+                <br>
+
+                <input
+                    type="email"
+                    id="correo"
+                    required
+                    aria-label="Correo Electrónico">
+
+                <br><br>
+
+                <!-- =========================
+                     INPUT TYPE="PASSWORD"
+                     Oculta los caracteres escritos
+                     ========================= -->
+                <label for="clave">
+                    Contraseña:
+                </label>
+
+                <br>
+
+                <input
+                    type="password"
+                    id="clave">
+
+                <br><br>
+
+                <!-- =========================
+                     INPUT TYPE="TEL"
+                     Para números telefónicos
+                     ========================= -->
+                <label for="telefono">
+                    Teléfono:
+                </label>
+
+                <br>
+
+                <input
+                    type="tel"
+                    id="telefono">
+
+                <br><br>
+
+                <!-- =========================
+                     INPUT TYPE="NUMBER"
+                     Solo acepta números
+                     ========================= -->
+                <label for="edad">
+                    Edad:
+                </label>
+
+                <br>
+
+                <input
+                    type="number"
+                    id="edad"
+                    min="18"
+                    max="100">
+
+                <br><br>
+
+                <!-- =========================
+                     INPUT TYPE="DATE"
+                     Selector de fecha
+                     ========================= -->
+                <label for="fecha">
+                    Fecha de Nacimiento:
+                </label>
+
+                <br>
+
+                <input
+                    type="date"
+                    id="fecha">
+
+                <br><br>
+
+                <!-- =========================
+                     INPUT TYPE="DATETIME-LOCAL"
+                     Fecha y hora local
+                     ========================= -->
+                <label for="cita">
+                    Fecha y Hora de Contacto:
+                </label>
+
+                <br>
+
+                <input
+                    type="datetime-local"
+                    id="cita">
+
+                <br><br>
+
+                <!-- =========================
+                     INPUT TYPE="COLOR"
+                     Permite seleccionar un color
+                     ========================= -->
+                <label for="color">
+                    Color Favorito:
+                </label>
+
+                <br>
+
+                <input
+                    type="color"
+                    id="color">
+
+                <br><br>
+
+                <!-- =========================
+                     INPUT TYPE="RANGE"
+                     Barra deslizante de valores
+                     ========================= -->
+                <label for="satisfaccion">
+                    Nivel de Satisfacción:
+                </label>
+
+                <br>
+
+                <input
+                    type="range"
+                    id="satisfaccion"
+                    min="1"
+                    max="10">
+
+                <br><br>
+
+                <!-- =========================
+                     INPUT TYPE="FILE"
+                     Permite subir archivos
+                     ========================= -->
+                <label for="archivo">
+                    Adjuntar Archivo:
+                </label>
+
+                <br>
+
+                <input
+                    type="file"
+                    id="archivo">
+
+                <br><br>
+
+                <!-- =========================
+                     INPUT TYPE="URL"
+                     Valida direcciones web
+                     ========================= -->
+                <label for="web">
+                    Sitio Web:
+                </label>
+
+                <br>
+
+                <input
+                    type="url"
+                    id="web">
+
+                <br><br>
+
+                <!-- =========================
+                     CHECKBOX
+                     Permite seleccionar varias opciones
+                     ========================= -->
+                <h3>Intereses</h3>
+
+                <input
+                    type="checkbox"
+                    id="laptops">
+
+                <label for="laptops">
+                    Laptops
+                </label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="smartphones">
+
+                <label for="smartphones">
+                    Smartphones
+                </label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="gaming">
+
+                <label for="gaming">
+                    Gaming
+                </label>
+
+                <br><br>
+
+                <!-- =========================
+                     RADIO BUTTON
+                     Solo permite elegir una opción
+                     ========================= -->
+                <h3>Género</h3>
+
+                <input
+                    type="radio"
+                    id="masculino"
+                    name="genero">
+
+                <label for="masculino">
+                    Masculino
+                </label>
+
+                <br>
+
+                <input
+                    type="radio"
+                    id="femenino"
+                    name="genero">
+
+                <label for="femenino">
+                    Femenino
+                </label>
+
+                <br>
+
+                <input
+                    type="radio"
+                    id="otro"
+                    name="genero">
+
+                <label for="otro">
+                    Otro
+                </label>
+
+                <br><br>
+
+                <!-- =========================
+                     TEXTAREA
+                     Área para escribir textos largos
+                     ========================= -->
+                <label for="mensaje">
+                    Mensaje:
+                </label>
+
+                <br>
+
+                <textarea
+                    id="mensaje"
+                    rows="6"
+                    cols="40">
+
+                </textarea>
+
+                <br><br>
+
+                <!-- =========================
+                     INPUT TYPE="HIDDEN"
+                     Campo oculto para enviar datos
+                     sin mostrarlos al usuario
+                     ========================= -->
+                <input
+                    type="hidden"
+                    value="NovaTech">
+
+                <!-- =========================
+                     BOTONES DEL FORMULARIO
+                     ========================= -->
+
+                <!-- Envía los datos -->
+                <input
+                    type="submit"
+                    value="Enviar">
+
+                <!-- Limpia todos los campos -->
+                <input
+                    type="reset"
+                    value="Limpiar">
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- =========================
+         PIE DE PÁGINA
+         ========================= -->
+    <footer>
+
+        <!-- Dirección o información de contacto -->
+        <address>
+
+            NovaTech Market<br>
+
+            Santo Domingo,
+            República Dominicana
+
+        </address>
+
+        <!-- Derechos de autor -->
+        <small>
+
+            © 2026 NovaTech Market.
+            Todos los derechos reservados.
+
+        </small>
+
+    </footer>
+
+</body>
+
+</html>

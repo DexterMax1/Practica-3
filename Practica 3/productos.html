@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | NovaTech Market</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animaciones.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>NovaTech Market</h1>
+        <p>Catálogo de Productos Tecnológicos</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carritos.html">Carrito</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main style="display: flex; gap: 20px; flex-wrap: wrap;">
+
+        <aside style="flex: 1; min-width: 250px;">
+            <h2>Filtros</h2>
+            <form id="form-filtros">
+                <fieldset>
+                    <legend>Buscar Productos</legend>
+
+                    <label for="precio">Precio Máximo</label><br>
+                    <input type="number" id="precio" placeholder="Ej: 1000">
+                    <br><br>
+
+                    <label for="marca">Marca</label><br>
+                    <select id="marca">
+                        <option value="">Seleccione</option>
+                        <option>ASUS</option>
+                        <option>Apple</option>
+                        <option>Samsung</option>
+                        <option>Logitech</option>
+                        <option>LG</option>
+                    </select>
+                    <br><br>
+
+                    <label for="categoria">Categoría</label><br>
+                    <select id="categoria">
+                        <option>Laptops</option>
+                        <option>Smartphones</option>
+                        <option>Gaming</option>
+                        <option>Accesorios</option>
+                    </select>
+                    <br><br>
+
+                    <label for="color">Color</label><br>
+                    <input list="colores" id="color">
+                    <datalist id="colores">
+                        <option value="Negro">
+                        <option value="Blanco">
+                        <option value="Azul">
+                        <option value="Rojo">
+                    </datalist>
+                    <br><br>
+
+                    <button type="submit">Aplicar Filtros</button>
+                </fieldset>
+            </form>
+        </aside>
+
+        <section style="flex: 3; min-width: 300px;">
+            <h2>Todos los Productos</h2>
+
+            <div class="contenedor-productos">
+
+                <article>
+                    <header>
+                        <h3>Laptop Gamer Pro X</h3>
+                    </header>
+                    <img src="img/Laptop Gamer Pro X.png" alt="Laptop Gamer Pro X">
+                    <p>Intel Core i7, 16GB RAM, SSD 512GB.</p>
+                    <p>Precio: <strong>$1200</strong></p>
+                    <button onclick="agregarAlCarrito(1)">Comprar 🛒</button>
+                    <footer>Disponible</footer>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>iPhone 15 Pro</h3>
+                    </header>
+                    <img src="img/Screenshot -06-17 140907.png" alt="iPhone 15 Pro">
+                    <p>Smartphone Apple con cámara avanzada.</p>
+                    <p>Precio: <strong>$999</strong></p>
+                    <button onclick="agregarAlCarrito(2)">Comprar 🛒</button>
+                    <footer>Disponible</footer>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Samsung Galaxy S25</h3>
+                    </header>
+                    <img src="img/jjjjjj.png" alt="Samsung Galaxy S25">
+                    <p>Pantalla AMOLED y procesamiento TOP.</p>
+                    <p>Precio: <strong>$899</strong></p>
+                    <button onclick="agregarAlCarrito(3)">Comprar 🛒</button>
+                    <footer>Disponible</footer>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Monitor LG UltraWide</h3>
+                    </header>
+                    <img src="img/hhhhh.png" alt="Monitor LG">
+                    <p>Monitor profesional de 27 pulgadas.</p>
+                    <p>Precio: <strong>$350</strong></p>
+                    <button onclick="agregarAlCarrito(4)">Comprar 🛒</button>
+                    <footer>Disponible</footer>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Teclado Mecánico RGB</h3>
+                    </header>
+                    <img src="img/teclado.png" alt="Teclado RGB">
+                    <p>Switches mecánicos ideales para juego.</p>
+                    <p>Precio: <strong>$89</strong></p>
+                    <button onclick="agregarAlCarrito(5)">Comprar 🛒</button>
+                    <footer>Disponible</footer>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Mouse Gamer Logitech</h3>
+                    </header>
+                    <img src="img/mouse.png" alt="Mouse Logitech">
+                    <p>Sensor óptico de alta precisión.</p>
+                    <p>Precio: <strong>$59</strong></p>
+                    <button onclick="agregarAlCarrito(6)">Comprar 🛒</button>
+                    <footer>Disponible</footer>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Auriculares HyperX</h3>
+                    </header>
+                    <img src="img/rrrrr.png" alt="Auriculares HyperX">
+                    <p>Sonido envolvente 7.1 confortable.</p>
+                    <p>Precio: <strong>$120</strong></p>
+                    <button onclick="agregarAlCarrito(7)">Comprar 🛒</button>
+                    <footer>Disponible</footer>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Steam Deck OLED</h3>
+                    </header>
+                    <img src="img/shot.png" alt="Steam Deck OLED">
+                    <p>Consola portátil para videojuegos modernos.</p>
+                    <p>Precio: <strong>$650</strong></p>
+                    <button onclick="agregarAlCarrito(8)">Comprar 🛒</button>
+                    <footer>Disponible</footer>
+                </article>
+
+            </div> </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <address>
+            NovaTech Market<br>
+            Santo Domingo, República Dominicana
+        </address>
+        <small>© 2026 NovaTech Market. Todos los derechos reservados.</small>
+    </footer>
+
+    <div id="toast" class="toast">
+        Producto agregado al carrito 🛒
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+
+</body>
+</html>
